@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
-import pickle
+from joblib import dump, load
 
-# Load the trained model and encoders
-model = pickle.load(open("random_forest_model.pkl", "rb"))
-label_encoders = pickle.load(open("label_encoders.pkl", "rb"))
+# Load the trained model and encoders using joblib
+model = load("random_forest_model.joblib")
+label_encoders = load("label_encoders.joblib")
 
 # Function to encode input
 def encode_input(user_input, encoders):
