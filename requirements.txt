@@ -1,4 +1,5 @@
+scikit-learn==1.0.2
+pandas==1.5.3
+numpy==1.24.3
+joblib   # if you're using it
 streamlit
-pandas
-scikit-learn
-pickle5
